@@ -10,8 +10,8 @@ namespace Kisik.DataAccess.Core.Models
     class VirtualExpenseRto
     {
         [Key] public int Id { get; set; }
-        public float Cost { get; set; }
-        public CostCurrencyRto CostCurrency { get; set; }
+        public int? UserId { get; set; }
+        public UserRto User { get; set; }
         public VirtualExpenseStatusRto Status { get; set; }
         public DateTimeOffset CreateDateTime { get; set; }
         public List<DateTimeOffset> ChangeDateTimes{ get; set; }
